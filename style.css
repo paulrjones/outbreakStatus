@@ -19,7 +19,8 @@
 }
 
 .body {
-    background-color: #212529;
+    background-color: #F2F2F2;
+    /* background-color: #D9D9D9; */
 }
 
 .description {
@@ -45,4 +46,17 @@
   .navItem {
       font-size: 25px;
       color: white;
+  }
+
+
+  .newsContainer {
+      background-color: white;
+      height: 100%;
+      width: 100%;
+      display: block;
+      margin: 0 0;
+  }
+
+  #nav {
+      background-color: #0b2d4c;
   }
