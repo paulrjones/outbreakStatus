@@ -32,31 +32,33 @@
 </head>
 <body class="body">
 
-
-    <!--nav bar and modal-->
-        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
-          <a class="navbar-brand text-black" href="index.html" id="logo"><img src="assets/img/outbreakLogo.png" class="main-logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  
+  <!--nav bar and modal-->
+  <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+    <div class="container">
+      <div class="row">
+        <a class="navbar-brand text-black col-6" href="index.html" id="logo"><img src="assets/img/outbreakLogo.png" class="main-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         
-          <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-           
-          </div>
+        
+        
+        <div class="navbar" id="navButtons">
+          <form class="form-inline my-2 my-lg-0 ml-5">
+            <!-- Travel advisory Button trigger modal -->
+            <a href="./register.html"><button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#registerModal">
+              Travel Advisories
+            </button></a>
+            <!-- Log in Button trigger modal -->
+            <button type="button" class="btn btn-outline-primary my-2 my-sm-0 ml-2" data-toggle="modal" data-target="#logInModal">
+              Log In
+            </button>
+          </form>
+        
+        </div>
+      </div><!--row-->
+    </div><!--container-->
         </nav>
     <!--nav bar-->
     <!-- Log in Modal -->
@@ -112,7 +114,7 @@
     </div> -->
     
 <div class="container">
-    <div class="newsContainer">
+    <div class="newsContainer rounded">
         <div class="newsTitle">Coronavirus COVID-19 Outbreak Latest News:</div>
         <div class="newsBody">As the coronavirus spreads globally we track the confirmed cases, deaths, recoveries through this microsite, dedicated to Covid-19 updates. The microsite also provides insights into the international spread and social media reaction, alongside a coronavirus FAQ and all the latest news and information concerning the outbreak.
         </div>
@@ -134,7 +136,113 @@
       <div class="riskAssessment col-8 border border-#F2F2F2 ml-4 rounded">
         <div class="row">
         <div class="riskAssessmentText col-6 mr-0">
-        Lorem ipsum dolor, sit amet consectetur  elit. Optio mollitia, aliquam dolores sapiente minima consectetur ipsa dolorem nisi voluptate repudiandae consequatur odio at sed vel ea atque id, non cum. 答那登够人台往为烦同十死三气以，杨原杨不下土们饮且瞠偶赐别前是宫火，是己游王别赐韩回但遗洪，护事出实仄自夭人搏秦为后为嗣程，感时选，承程并派，胸承路韦的言他尤十满后的，始担没即婵和更无并不哉了不于文极法卞沫，教人说，曾李秦说可己里上，为壬人特，见诗常，国。Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius error omnis quis, corrupti dignissimos fugit incidunt assumenda iste, esse voluptatum aperiam culpa, illo consequatur quibusdam minus numquam autem nam voluptas!</div>
+          <form>
+            <div class="form-group row">
+              <h4>Are you at risk of the Coronavirus? Find out below:</h4>
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+              <div class="col-sm-10 form-inline">
+                <input type="radio" class="form-control mr-2" id="male" placeholder="Male" checked>
+                Male
+                <input type="radio" class="form-control ml-3 mr-2" id="female" placeholder="female">
+                Female
+              </div>
+            </div>
+            <div class="dropdown">
+              <label for="age" class="mr-2">Age Range:</label>
+                <select id="age">
+                  <option value="baby">0-3</option>
+                  <option value="young">3-10</option>
+                  <option value="middle">11-17</option>
+                  <option value="older" selected>18-35</option>
+                  <option value="okBoomer">36-64</option>
+                  <option value="veryOld">65+</option>
+                </select>
+            </div>
+            <!-- <div class="form-group row">
+              <label for="userLocation" class="col-sm-2 col-form-label">Location</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+              </div>
+            </div> -->
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Location</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      North America
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Europe
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                    <label class="form-check-label" for="gridRadios3">
+                      Asia
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                    <label class="form-check-label" for="gridRadios4">
+                      Africa
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row">
+              <div class="col-sm-2">Have you traveled recently?</div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    China
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Italy
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Iran
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    South Korea
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
         <div class="riskImg col-6 mr-0"><img src="./assets/img/coronaVirusMap.png" alt="coronaVirus"></div>
         </div><!--inside row-->
       </div>
@@ -161,8 +269,18 @@
 
 
 
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="twitter">
+  <h1>Tweet us!</h1>
+  <div>
+    <a href="https://twitter.com/intent/tweet?button_hashtag=&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="true">Tweet #timeline</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
 
 
 
