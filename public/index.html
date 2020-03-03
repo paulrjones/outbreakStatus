@@ -35,25 +35,30 @@
 
     <!--nav bar and modal-->
         <nav class="navbar navbar-expand-lg navbar-light" id="nav">
-          <a class="navbar-brand text-black" href="index.html" id="logo"><img src="assets/img/outbreakLogo.png" class="main-logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
-            
-            <form class="form-inline my-2 my-lg-0">
-              <!-- Travel advisory Button trigger modal -->
-              <a href="./register.html"><button type="button" class="btn btn-outline-success my-2 my-sm-0 ml-2" data-toggle="modal" data-target="#registerModal">
-                Travel Advisories
-              </button></a>
-              <!-- Log in Button trigger modal -->
-              <button type="button" class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#logInModal">
-                Log In
+          <div class="container">
+          <div class="row">
+              <a class="navbar-brand text-black col-6" href="index.html" id="logo"><img src="assets/img/outbreakLogo.png" class="main-logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
               </button>
-            </form>
-           
-          </div>
+            
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+          <form class="form-inline my-2 my-lg-0 ml-5">
+            <!-- Travel advisory Button trigger modal -->
+            <a href="./register.html"><button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#registerModal">
+              Travel Advisories
+            </button></a>
+            <!-- Log in Button trigger modal -->
+            <button type="button" class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#logInModal">
+              Log In
+            </button>
+          </form>
+        
+        </div>
+      </div><!--row-->
+    </div><!--container-->
         </nav>
     <!--nav bar-->
     <!-- Log in Modal -->
