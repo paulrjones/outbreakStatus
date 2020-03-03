@@ -21,6 +21,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "express": "^4.17.1",
-    "express-react": "^1.0.2"
+    "express-react": "^1.0.2",
+    "unirest": "^0.6.0"
   }
 }
