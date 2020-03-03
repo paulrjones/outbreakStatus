@@ -93,6 +93,9 @@
     text-align: center;
     height: 70px;
     width: auto;
+}
 
-    
+#navButtons {
+    position: absolute;
+    right: 0;
 }
