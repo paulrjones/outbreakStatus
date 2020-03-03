@@ -100,3 +100,8 @@
     right: 0;
     top: 20px;
 }
+
+.newsContainer {
+    background-color: black;
+    color: white;
+}
