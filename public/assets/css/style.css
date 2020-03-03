@@ -44,6 +44,7 @@
   }
 
   .navItem {
+      
       font-size: 25px;
       color: white;
   }
@@ -60,7 +61,8 @@
   }
 
   #nav {
-      background-color: #0b2d4c;
+      
+     text-align: center;
   }
 
 .newsTitle {
@@ -68,10 +70,17 @@
     text-align: center;
 }
 
-img {
+/* img {
     width: 100%;
     padding: 10px;
     border: 1px solid black;
     background-color: #fff;
-}
+} */
 
+.main-logo {
+    text-align: center;
+    height: 70px;
+    width: auto;
+
+    
+}
