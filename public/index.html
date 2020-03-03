@@ -34,47 +34,28 @@
 
 
     <!--nav bar and modal-->
-        <nav class="navbar navbar-expand-lg" id="nav">
-          <a class="navbar-brand text-white" href="index.html" id="logo">Outbreak Status</a>
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+          <a class="navbar-brand text-black" href="index.html" id="logo"><img src="assets/img/outbreakLogo.png" class="main-logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         
           <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              
-              <li class="nav-item navItem">
-                <a class="nav-link text-white" href="#">About</a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
               </li>
-              <li class="nav-item navItem">
-                <a class="nav-link text-white" href="#">Home</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
               </li>
-              <li class="nav-item dropdown navItem">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Facebook</a>
-                  <a class="dropdown-item" href="#">Twitter</a>
-                  <a class="dropdown-item" href="#">Youtube</a>
-                  <!-- <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Private 1 on 1</a> -->
-                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
               </li>
-              <li class="nav-item text-white navItem">
-                <a class="nav-link text-white" href="#">Treatment</a>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
-              
-              
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <!-- Log in Button trigger modal -->
-              <button type="button" class="btn btn-outline-primary my-2 my-sm-0" style="font-size: 20px;" data-toggle="modal" data-target="#logInModal">
-                Log In
-              </button>
-              <!-- Register Button trigger modal -->
-              <a href="./register.html"><button type="button" style="font-size: 20px;" class="btn btn-outline-success my-2 my-sm-0 ml-2" data-toggle="modal" data-target="#registerModal">
-                Register
-              </button></a>
-            </form>
+           
           </div>
         </nav>
     <!--nav bar-->
@@ -150,20 +131,26 @@
 
   <div class="riskAssessmentAndEmail">
     <div class="row">
-      <div class="riskAssessment col-8 border border-danger ml-4">
+      <div class="riskAssessment col-8 border border-#F2F2F2 ml-4 rounded">
         <div class="row">
         <div class="riskAssessmentText col-6 mr-0">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio mollitia, aliquam dolores sapiente minima consectetur ipsa dolorem nisi voluptate repudiandae consequatur odio at sed vel ea atque id, non cum. 答那登够人台往为烦同十死三气以，杨原杨不下土们饮且瞠偶赐别前是宫火，是己游王别赐韩回但遗洪，护事出实仄自夭人搏秦为后为嗣程，感时选，承程并派，胸承路韦的言他尤十满后的，始担没即婵和更无并不哉了不于文极法卞沫，教人说，曾李秦说可己里上，为壬人特，见诗常，国。Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius error omnis quis, corrupti dignissimos fugit incidunt assumenda iste, esse voluptatum aperiam culpa, illo consequatur quibusdam minus numquam autem nam voluptas!</div>
+        Lorem ipsum dolor, sit amet consectetur  elit. Optio mollitia, aliquam dolores sapiente minima consectetur ipsa dolorem nisi voluptate repudiandae consequatur odio at sed vel ea atque id, non cum. 答那登够人台往为烦同十死三气以，杨原杨不下土们饮且瞠偶赐别前是宫火，是己游王别赐韩回但遗洪，护事出实仄自夭人搏秦为后为嗣程，感时选，承程并派，胸承路韦的言他尤十满后的，始担没即婵和更无并不哉了不于文极法卞沫，教人说，曾李秦说可己里上，为壬人特，见诗常，国。Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius error omnis quis, corrupti dignissimos fugit incidunt assumenda iste, esse voluptatum aperiam culpa, illo consequatur quibusdam minus numquam autem nam voluptas!</div>
         <div class="riskImg col-6 mr-0"><img src="./assets/img/coronaVirusMap.png" alt="coronaVirus"></div>
         </div><!--inside row-->
       </div>
-      <div class="email col-3 border border-primary ml-5">
-        Sign up for our newsletter?
+      <div class="email col-3 border border-#F2F2F2 ml-5 rounded">
+        Sign up for the latest updates on the Coronavirus and other deadly viruses.
         <form>
-          Name:
-          <input type="text">
-          Email: 
-          <input type="email">
+          <div class="form-group">
+            <label for="clientName">Name</label>
+            <input type="text" class="form-control" id="clientName" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="clientEmail">Email Address</label>
+            <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div><!--outside row-->
