@@ -104,4 +104,13 @@
 .newsContainer {
     background-color: black;
     color: white;
+    margin-bottom: 10px;
+    height: 180px;
+}
+
+/* for desktops only */
+
+.carousel-indicators {
+    position: relative;
+    top: 130px;
 }
