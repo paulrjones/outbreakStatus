@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const db = require('../config/db.js')
+const db = require('../config/index.js/index.js')
 
 // GET all users
 router.get('/users', (req, res) => {

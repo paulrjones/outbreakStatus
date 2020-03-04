@@ -1,8 +1,3 @@
-//Constant declaration
-//L = Link
-//B = Base
-//K = Key
-//S = Sort
 L_B_TRAVELADVISORY = 'https://www.travel-advisory.info/api?'
 
 
@@ -20,4 +15,3 @@ req.headers({
 
 req.end(function (res) {
   if (res.error) throw new Error(res.error);
-
