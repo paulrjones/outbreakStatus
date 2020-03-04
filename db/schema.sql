@@ -6,7 +6,6 @@ USE outbreakStatus_db;
 
 CREATE TABLE users (
   userid INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-  username VARCHAR(30) NOT NULL UNIQUE,
   wholename VARCHAR(100),
   gender VARCHAR(10),
   age_range INT(3),
