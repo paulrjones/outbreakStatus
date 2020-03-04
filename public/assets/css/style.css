@@ -82,6 +82,7 @@
 }
 
 .riskAssessmentText {
+    padding: 30px;
     display: inline-block;
 }
 
@@ -104,4 +105,12 @@
 .newsContainer {
     background-color: black;
     color: white;
+}
+
+.riskAssessmentAndEmail {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
