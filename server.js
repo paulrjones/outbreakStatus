@@ -6,7 +6,7 @@ app.use(express.static(join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-const { User, Post } = require('./models')
+const { User, Event } = require('./models')
 
 app.get('/users', (req, res) => User.findAll()
   .then(users => res.json(users))
