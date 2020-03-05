@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+require('dotenv').config()
+
+>>>>>>> b14cd823da542a73163859f6b1a857a8cf91c387
 const express = require('express')
 const { join } = require('path')
 const app = express()
@@ -6,6 +11,7 @@ app.use(express.static(join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+<<<<<<< HEAD
 const { User, Post } = require('./models')
 
 app.get('/users', (req, res) => User.findAll()
@@ -35,3 +41,10 @@ require('./config').sync()
   .then(() => app.listen(3000))
   .catch(e => console.error(e))
  
+=======
+// app.use(require('./routes'))
+
+require('./config').sync()
+  .then(() => app.listen(process.env.PORT || 3000))
+  .catch(e => console.error(e))
+>>>>>>> b14cd823da542a73163859f6b1a857a8cf91c387
