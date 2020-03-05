@@ -214,20 +214,20 @@
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
                     Italy
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                  <label class="form-check-label" for="defaultCheck3">
                     Iran
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                  <label class="form-check-label" for="defaultCheck4">
                     South Korea
                   </label>
                 </div>
@@ -255,7 +255,7 @@
             <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" id="submitEmail">Submit</button>
         </form>
       </div>
     </div><!--outside row-->
@@ -301,6 +301,17 @@
     
 
 
+<script>
+  console.log('Hello world')
+  document.getElementById('submitEmail').addEventListener('click', ({ target: { value } }) => {
+   event.preventDefault()
+   console.log('Hi')
+
+   console.log(value)
+   console.log('Hi2')
+})
+console.log('Hello world2')
+</script>
 
 </body>
 </html>
