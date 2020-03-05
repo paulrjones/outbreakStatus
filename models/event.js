@@ -1,9 +1,26 @@
-const { Model, STRING } = require('sequelize')
+const { Model, STRING, INTEGER } = require('sequelize')
 
-class Post extends Model { }
+class Event extends Model { }
 
-Post.init({
-  text: STRING
-}, { sequelize: require('../config'), modelName: 'post' })
+Event.init({
+email: {
+  type: STRING,
+  references: {
+    model: 'users',
+    key: 'email',
+    }
+  },
+eventname: {
+  type: STRING,
+  },
+eventlocation: {
+  type: STRING,
+  },
+eventdate: {
+  type: INTEGER,
+  }},
 
-module.exports = Post
+{ sequelize: require('../config'), modelName: 'event' }
+  )
+
+module.exports = Event
