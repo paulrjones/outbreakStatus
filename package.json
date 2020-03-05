@@ -1,8 +1,8 @@
 {
-  "name": "outbreakStatus",
+  "name": "outbreakstatus",
   "version": "1.0.0",
   "description": "www.outbreakstatus.com. This is a full stack web app that will provide all things related to epidemics.",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"

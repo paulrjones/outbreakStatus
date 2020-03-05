@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize')
 
-const sequelize = new Sequelize(process.env.JAWSDB_URL || process.env.LOCAL_URL)
+// STEP 1: Create a database called user_db
+// STEP 2: Write your specific connection URI into the space below
 
-module.exports = sequelize
+module.exports = new Sequelize('mysql://root:root@localhost:3306/outbreakstatus_db')
