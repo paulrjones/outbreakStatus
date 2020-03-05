@@ -184,7 +184,7 @@ h4 {
     text-align: center;
 }
 
-#wechatCode {
-    height: 40px;
-    width: 40px;
+img#wechatCode {
+    height: 120px;
+    width: 120px;
 }
