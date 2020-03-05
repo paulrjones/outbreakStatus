@@ -14,10 +14,6 @@
     color: #F0933F;
 }
 
-.container {
-    
-}
-
 .body {
     background-color: #fff;
     /* background-color: #D9D9D9; */
@@ -33,38 +29,39 @@
     height: 700px;
 }
 
-  
-  .container {
+.container-1 {
+    margin: auto;
     width: auto;
     /* max-width: 680px; */
-    padding: 0 15px;
-  }
-  
-  #logo {
-      font-size: 40px;
-  }
+    padding: auto;
+}
 
-  .navItem {
-      
-      font-size: 25px;
-      color: white;
-  }
+#logo {
+    font-size: 40px;
+}
 
+.navItem {
+    font-size: 25px;
+    color: white;
+}
 
-  .newsContainer {
-      background-color: white;
-      height: 100%;
-      width: 100%;
-      display: block;
-      margin: 0 0;
-      padding: 10px 20px;
-      border: 1px solid black;
-  }
+.newsContainer {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0 0;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
 
-  #nav {
-      
-     text-align: center;
-  }
+#nav {
+    text-align: center;
+}
+
+.navbar {
+    margin-left: 100px;
+}
 
 .newsTitle {
     font-size: 45px;
@@ -74,14 +71,19 @@
 .riskImg img {
     width: 100%;
     padding: 10px;
-   background-color: #fff;
-} 
+    background-color: #fff;
+}
 
 .riskAssessment {
     width: 100%;
 }
 
 .riskAssessmentText {
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 60%;
     padding: 30px;
     display: inline-block;
 }
@@ -90,7 +92,9 @@
     display: inline-block;
     margin: 0;
 }
+
 .main-logo {
+    margin: auto;
     text-align: center;
     height: 70px;
     width: auto;
@@ -108,9 +112,65 @@
 }
 
 .riskAssessmentAndEmail {
+    border: 1px solid black;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+
+.twitter {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.sign-up {
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    margin-bottom: 45px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.risk-assessment {
+    background-color: rgb(230, 230, 230);
+    border: 1px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.map {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.form-check-label {
+    padding: 5px;
+}
+
+.btn-risk {
+    width: 100px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+h4 {
+    text-align: center;
 }
