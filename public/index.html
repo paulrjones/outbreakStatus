@@ -19,29 +19,39 @@
     integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
     crossorigin='anonymous'></script>
   <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
-  integrity='sha384-wfSDF2E50Y2D1uUdj03uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
+    integrity='sha384-wfSDF2E50Y2D1uUdj03uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
   <script src="./assets/js/app.js"></script>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="body">
-  
-    <div class="container nav">
-      <div class="navbar navbar-expand-lg navbar-light bg-light ">
-        <a class="navbar-brand" href="#"><img src="assets/img/outbreakLogo.png" class="main-logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href=" https://travelmaps.state.gov/TSGMap/"> Travel Advisory <span
-                class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-target="#logInModal" href="#">Log In</a>
-            </li>
+  <nav>
+    <div class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/outbreakLogo.png" class="main-logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" a href="https://travelmaps.state.gov/TSGMap/"> Travel Advisory <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-target="#logInModal" href="#">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-target="#logInModal" href="es.html">Español</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-target="#logInModal" href="zh.html">中文</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
       
           </ul>
       
@@ -173,7 +183,7 @@
                 </div>
               </fieldset>
               <div class="form-group row">
-                <div class="col-sm-2">Have you traveled recently?</div>
+                <div class="col-sm-2">Have you traveled recently? (in the past 45 days</div>
                 <div class="col-sm-10">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="china" id="traveledChina">
@@ -213,7 +223,7 @@
                   </div>
                 </div>
               </div>
-<!-- 
+              <!-- 
               <div class="btn-risk col-sm-10">
                 <button type="submit" class="btn btn-primary  ">Submit</button>
               </div> -->
@@ -224,7 +234,8 @@
             <form class="">
               <h4>Would you like to sign up our email list and receive the latest news on the Coronavirus?</h4>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                  checked>
                 <label class="form-check-label" for="exampleRadios1">
                   Yes
                 </label>
