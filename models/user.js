@@ -1,4 +1,5 @@
 const { Model, STRING, INTEGER, BOOLEAN } = require('sequelize')
+const sequelize = require('../config')
 
 class User extends Model { }
 
@@ -22,7 +23,8 @@ User.init({
   emailList: {
     type: BOOLEAN
   }},
-   { sequelize: require('../config'), modelName: 'user' } 
+  // { sequelize: require('../config'), modelName: 'user' } 
+   { sequelize, modelName: 'user' } 
   )
 
 module.exports = User

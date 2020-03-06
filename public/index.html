@@ -20,7 +20,7 @@
     crossorigin='anonymous'></script>
   <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
   integrity='sha384-wfSDF2E50Y2D1uUdj03uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
-  <script src="./assets/js/app.js"></script>
+
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -160,37 +160,37 @@
                 <div class="col-sm-2">Have you traveled recently?</div>
                 <div class="col-sm-10">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChina"value="China">
                     <label class="form-check-label" for="defaultCheck1">
                       China
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <input class="form-check-input" type="checkbox" value="" id="checkItaly" value="Italy">
                     <label class="form-check-label" for="defaultCheck1">
                       Italy
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <input class="form-check-input" type="checkbox" value="" id="checkIran" value="Iran">
                     <label class="form-check-label" for="defaultCheck1">
                       Iran
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <input class="form-check-input" type="checkbox" value="" id="checkSouthKorea" value="South Korea">
                     <label class="form-check-label" for="defaultCheck1">
                       South Korea
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="checkSouthAmerica" value="South America">
                     <label class="form-check-label" for="gridRadios5">
                       South America
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="option6">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="checkAustralia" value="Australia">
                     <label class="form-check-label" for="gridRadios6">
                       Australia
                     </label>
@@ -220,7 +220,7 @@
               </div>
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary" id="submitEmail">Submit</button>
             </form>
           </div>
 
@@ -303,22 +303,21 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
-
-
-
+<!-- 
 <script>
   console.log('Hello world')
-  document.getElementById('submitEmail').addEventListener('click', ({ target: { value } }) => {
+  document.getElementById('submitEmail').addEventListener('click', (event) => {
    event.preventDefault()
    console.log('Hi')
 
-   console.log(value)
+   console.log(event.target)
    console.log('Hi2')
 })
 console.log('Hello world2')
-</script>
-
+</script>   -->
+<script defer src="./assets/js/app.js"></script>
 </body>
 
 </html>

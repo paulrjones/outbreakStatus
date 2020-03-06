@@ -1,5 +1,6 @@
-// const router = require('express').Router()
-// const db = require('../config/index.js/index.js')
+//const db = require('../config')
+const db     = require('../models/user.js')
+const router = require('express').Router()
 
 // // GET all users
 // router.get('/users', (req, res) => {
@@ -22,13 +23,16 @@
 //   })
 // })
 
-// // POST an user
-// router.post('/users', (req, res) => {
-//   db.query('INSERT INTO users SET ?', req.body, err => {
-//     if (err) { console.log(err) }
-//     res.sendStatus(200)
-//   })
-// })
+// POST an userc
+router.post('/users', (req, res) => {
+    //db.query('INSERT INTO users SET ?', req.body, err => {
+        db.create(req.body)
+        .then(() => res.sendStatus(200))
+        .catch(e => console.error(e))
+        // if (err) { console.log(err) }
+        // else res.sendStatus(200)
+    })
+//})
 
 // // PUT an user
 // router.put('/users/:id', (req, res) => {
@@ -46,4 +50,4 @@
 //   })
 // })
 
-// module.exports = router
+ module.exports = router
