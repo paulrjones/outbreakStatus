@@ -301,11 +301,47 @@ img#wechatCode {
     }
 } */
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 374px) 
+and (orientation : portrait) {
+    img.main-logo {
+        height: 30px;
+    }
+    span{
+        margin-left: 20px;
+    }
+    button.navbar-toggler {
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        border: none;
+    }
+    .riskAssessmentText {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+    }
+    .row.footer {
+        display: flex;
+        flex-direction: column;
+    }
+    input#male{
+        width: auto;
+    }
+    input#female{
+        width: auto;
+        margin-left: 20px;
+    }
+    .qr {
+        margin-bottom: 20px;
+    }
+}
 
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
     img.main-logo {
         height: 40px;
