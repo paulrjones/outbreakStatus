@@ -38,6 +38,9 @@
             <a class="nav-link" a href="https://travelmaps.state.gov/TSGMap/"> Travel Advisory <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" data-target="#logInModal" href="ekit.html">How to Prepare</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" data-target="#logInModal" href="#">Log In</a>
           </li>
           <li class="nav-item">
@@ -53,7 +56,33 @@
     </div>
   </nav>
       
+          </ul>
       
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="navbar" id="navButtons">
+        <form class="form-inline my-2 my-lg-0 ml-5"> -->
+    <!-- Travel advisory Button trigger modal -->
+    <!-- <a href="./register.html"><button type="button" class="btn btn-outline-success my-2 my-sm-0" -->
+    <!-- data-toggle="modal" data-target="#registerModal">
+              Travel Advisories -->
+    <!-- </button></a> -->
+    <!-- Log in Button trigger modal -->
+    <!-- <button type="button" class="btn btn-outline-primary my-2 my-sm-0 ml-2" data-toggle="modal"
+            data-target="#logInModal">
+            Log In -->
+    <!-- </button>
+        </form>
+
+      </div>
+    </div> -->
+    <!--row-->
+    <!-- </div> -->
+    <!--container-->
+
+
   <div class="container">
   <div class="newsContainer">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -75,31 +104,13 @@
     </div><!--filler text-->
   </div>
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="container">
 
       <div class="row">
 
-        <div class="riskAssessmentText col-sm-12 mr-0 col-sm-auto col-md-6">
-          <div>
+        <div class="riskAssessmentText col-sm-12 mr-0 col-sm-auto col-md-12 col-lg-6">
+        
             <form class="risk-form">
               <div class="form-group row ">
 
@@ -219,10 +230,11 @@
               <div class="btn-risk col-sm-10">
                 <button type="submit" class="btn btn-primary  ">Submit</button>
               </div> -->
-          </div>
+            </form>
+          
 
           <div class="sign-up">
-            <form class="sign-up">
+            <form class="">
               <h4>Would you like to sign up our email list and receive the latest news on the Coronavirus?</h4>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
@@ -248,7 +260,7 @@
 
         </div>
         <!--  MAP -->
-        <div class="map col-lg-auto col-md-auto col-sm-auto ">
+        <div class="map col-lg-auto col-md-12 col-sm-12 ">
 
           <div class='tableauPlaceholder' id='viz1583359103396' style='position: relative'><noscript><a
                 href='https:&#47;&#47;www.cnbc.com&#47;2020&#47;01&#47;23&#47;this-map-shows-the-latest-spread-of-the-coronavirus.html'><img
@@ -295,25 +307,31 @@
     </div>
     <br>
     <div class="container">
-    <div class="twitter col-lg-auto col-md-auto col-sm-auto">
-      <h1>Tweet us!</h1>
-      <div>
-        <a href="https://twitter.com/intent/tweet?button_hashtag=&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
-          data-show-count="true">Tweet #timeline</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="row footer">
+      <div class="twitter col-3">
+        <h3>Twitter:</h3>
+       <img src="./assets/img/twitterQRcode.png" alt="twitter">
+      </div><!--twitter-->
+      <div class="github col-3">
+        <h3>Our Github:</h3>
+          <img class="qr" src="./assets/img/outbreakStatusGithub.png" alt="myPortfolio">
       </div>
-      <br>
-      <h3>Our Github:</h3>
-      <img class="qr" src="./assets/img/outbreakStatusGithub.png" alt="myPortfolio">
-      <br>
-      <br>
-      <br>
-      <h3>WeChat (微信）</h3>
-      <img id="wechatCode" src="./assets/img/张亿万微信.png" alt="wechatCode">
+      <div class="wechat col-3">
+        <h3>WeChat (微信）</h3>
+        <img id="wechatCode" src="./assets/img/张亿万微信.png" alt="wechatCode">
       </div>
-    </div><!--twitter-->
-  </div>
+  </div><!--row-->
+  </div><!-- smaller container-->
   </div><!--main container-->
+
+
+
+
+
+
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
