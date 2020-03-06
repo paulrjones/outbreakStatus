@@ -124,13 +124,14 @@
     -o-border-radius: 15px;
 }
 
-.twitter {
+.footer {
     text-align: center;
     margin: auto;
     width: 90%;
     border: 1px solid black;
     border-radius: 15px;
     padding: 30px;
+    justify-content: center;
 }
 
 .sign-up {
@@ -180,10 +181,11 @@ h4 {
 }
 
 img#wechatCode {
-    height: 120px;
-    width: 120px;
+    height: 105px;
+    width: 105px;
 }
 
+/* 
 @media screen and (max-width: 320px) {
     .main-logo {
         width: 100%;
@@ -297,6 +299,6 @@ img#wechatCode {
     .row{
         width: 100%
     }
+} */
 
    
-}
