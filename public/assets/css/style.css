@@ -316,5 +316,16 @@ and (orientation : portrait) {
         right: 0;
         margin-right: 10px;
     }
+    .riskAssessmentText {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+    }
+    .row.footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
    
