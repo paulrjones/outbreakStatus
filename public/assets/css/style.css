@@ -36,13 +36,13 @@
     padding: auto;
 }
 
-#logo {
-    font-size: 40px;
-}
-
 .navItem {
     font-size: 25px;
     color: white;
+}
+
+.navbar {
+    margin: auto;
 }
 
 .newsContainer {
@@ -53,14 +53,6 @@
     margin: 0 0;
     padding: 10px 20px;
     border: 1px solid black;
-}
-
-#nav {
-    text-align: center;
-}
-
-.navbar {
-    margin-left: 100px;
 }
 
 .newsTitle {
@@ -94,9 +86,7 @@
 }
 
 .main-logo {
-    margin: auto;
-    text-align: center;
-    height: 70px;
+    height: 80px;
     width: auto;
 }
 
@@ -111,6 +101,11 @@
     color: white;
     margin-bottom: 10px;
     height: 180px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 /* for desktops only */
@@ -187,4 +182,121 @@ h4 {
 img#wechatCode {
     height: 120px;
     width: 120px;
+}
+
+@media screen and (max-width: 320px) {
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .newsContainer {
+        width: 100%;
+    }
+    .riskAssessmentText {
+        width: 100%;
+        background: lightgrey;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .map {
+        width: 100%;
+        border: none;
+    }
+    .twitter {
+        border: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .newsContainer {
+        width: 100%;
+    }
+    .riskAssessmentText {
+        width: 100%;
+        background: lightgrey;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .map {
+        width: 100%;
+        border: none;
+    }
+    .twitter {
+        border: none;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .newsContainer {
+        width: 100%;
+    }
+    .riskAssessmentText {
+        width: 100%;
+        background: lightgrey;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .map {
+        width: 100%;
+        border: none;
+    }
+    .twitter {
+        border: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .newsContainer {
+        width: 100%;
+    }
+    .riskAssessmentText {
+        background: white;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .map {
+        
+        width: 40%;
+        border: none;
+    }
+    .twitter {
+        border: none;
+        width: 100%;
+    }
+    .row{
+        width: 100%
+    }
+
+   
 }
