@@ -8,18 +8,8 @@ let uname = localStorage.getItem('uname')
 
 
 // function to create a new user
-const createUser = () => {
+const createUser = (insertObj) => {
  // console.log('axios call:',axios)
-   insertObj = 
-  {
-    // grabbing the value of the username text input to pass in the request body
-    email:        'JB@diamondsFE3.com', //document.getElementById('username').value
-    wholename:    'James Bond3',
-    gender:       'male',
-    age_range:    '50',
-    country:      'us',
-    emailList:    true
-  }
   //insertObj.email = emailInput
     // Ajax request hitting the POST route defined in our userRoutes.js
     axios.post('/api/users',insertObj //{
@@ -53,13 +43,31 @@ const createUser = () => {
    console.log('gridRadios2: ',document.getElementById('gridRadios2').checked)
    console.log('gridRadios3: ',document.getElementById('gridRadios3').checked)
    console.log('gridRadios4: ',document.getElementById('gridRadios4').checked)
-   console.log('age: ',document.getElementById('age').value)
-   console.log('age: ',document.getElementById('age').value)
-   console.log('age: ',document.getElementById('age').value)
+   console.log('Email List-yes: ',document.getElementById('exampleRadios1').checked)
+   console.log('Email List-no: ',document.getElementById('exampleRadios2').checked)
+   let insertObj = 
+   {
+     // grabbing the value of the username text input to pass in the request body
+     email:        'JB@diamondsAreForever.com', //document.getElementById('username').value
+     wholename:    'James Bond',
+     gender:       'male',
+     age_range:    '50',
+     country:      'us',
+     emailList:    true
+   }
+   insertObj.email     = document.getElementById('inputEmail3').value
+   insertObj.wholename = document.getElementById('inputName').value
+   document.getElementById('male').checked ? insertObj.gender='male': insertObj.gender='female'
+   insertObj.age_range = document.getElementById('age').value
+   if (document.getElementById('gridRadios1').checked){insertObj.country=document.getElementById('gridRadios1').value}
+   else if (document.getElementById('gridRadios2').checked){insertObj.country=document.getElementById('gridRadios2').value}
+   else if (document.getElementById('gridRadios3').checked){insertObj.country=document.getElementById('gridRadios3').value}
+   else if (document.getElementById('gridRadios4').checked){insertObj.country=document.getElementById('gridRadios4').value}
 
+   console.log('insertObj: ', insertObj)
    //createUser()
    //console.clear()
-   createUser()
+   createUser(insertObj)
    console.log(event.target)
    console.log('Hi2b')
 })

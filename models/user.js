@@ -1,4 +1,5 @@
-const { Model, STRING, INTEGER, BOOLEAN } = require('sequelize')
+//const { Model, STRING, INTEGER, BOOLEAN } = require('sequelize')
+const { Model, STRING, BOOLEAN } = require('sequelize')
 const sequelize = require('../config')
 
 class User extends Model { }
@@ -15,7 +16,7 @@ User.init({
     type: STRING
   },
   age_range: {
-    type: INTEGER
+    type: STRING
   },
   country: {
     type: STRING
