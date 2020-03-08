@@ -19,5 +19,5 @@ CREATE TABLE events (
   eventname VARCHAR(500),
   eventlocation VARCHAR(200),
   datecreated INT,
-  FOREIGN KEY (email) REFERENCES users(email),
+  FOREIGN KEY (email) REFERENCES users(email)
 );
