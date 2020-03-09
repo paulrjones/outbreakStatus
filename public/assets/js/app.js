@@ -1,5 +1,5 @@
 fetch(
-  "http://newsapi.org/v2/top-headlines?q=coronavirus&sortBy=publishedAt&language=en&apiKey=f7435c3676b34c89bdb1562b6cac0849"
+  "https://newsapi.org/v2/top-headlines?q=coronavirus&sortBy=publishedAt&language=en&apiKey=f7435c3676b34c89bdb1562b6cac0849"
 )
   .then(r => r.json())
   .then(({ articles }) => {

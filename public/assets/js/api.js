@@ -34,6 +34,5 @@ var url = 'http://newsapi.org/v2/everything?' +
 
   fetch(req)
     .then(function (response) {
-      console.log(response.json());
-    })
-
+      console.log(response.json())
+    });
