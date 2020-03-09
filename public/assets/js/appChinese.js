@@ -1,4 +1,4 @@
-fetch('http://newsapi.org/v2/top-headlines?country=cn&apiKey=f7435c3676b34c89bdb1562b6cac0849')
+fetch('https://newsapi.org/v2/top-headlines?country=cn&apiKey=f7435c3676b34c89bdb1562b6cac0849')
     .then(r => r.json())
     .then(({articles}) => {
       console.log(articles)
