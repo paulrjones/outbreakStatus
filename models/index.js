@@ -1,5 +1,5 @@
-const User = require('./User.js')
-const Event = require('./Event.js')
+const User = require('./user.js')
+const Event = require('./event.js')
 
 User.hasMany(Event)
 Event.belongsTo(User, {
