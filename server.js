@@ -7,7 +7,8 @@ app.use(express.static(join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-const { User, Post } = require('./models')
+const { User, Post } = require('./models');
+const PORT = process.env.PORT || 3000;
 app.use(require('./routes'))
 // app.get('/users', (req, res) => User.findAll()
 //   .then(users => res.json(users))
@@ -39,6 +40,6 @@ app.use(require('./routes'))
   app.use(require('./routes'))
 
   sequelize.sync()
-    .then(() => app.listen(3000))
+    .then(() => app.listen(PORT))
     .catch(e => console.error(e))
   
