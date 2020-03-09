@@ -365,13 +365,11 @@ and (orientation : portrait) {
         display: flex;
         flex-direction: column;
     }
-    input#male{
-        width: auto;
-    }
-    input#female{
+    input#gender{
         width: auto;
         margin-left: 20px;
     }
+    
     .qr {
         margin-bottom: 20px;
     }
