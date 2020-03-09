@@ -65,7 +65,7 @@ console.log($("input[name='gridRadios']:checked").val())
     // grabbing the value of the username text input to pass in the request body
     email: document.getElementById("inputEmail3").value,
     wholename: document.getElementById("inputName").value,
-    gender: document.getElementById("gender").checked.value,
+    gender: document.getElementsByClassName("gender").checked.value,
     age_range: document.getElementById("age").value,
     country: $("input[name='gridRadios']:checked").val(),
     // countriesTraveled: document.getElementById("recentTravels").checked.value,
