@@ -152,3 +152,7 @@ console.log("object: ", insertObj)
   // insertObj = '';
 });
 console.log("Hello world2b");
+
+document.getElementById('checkChina').addEventListener('click', () => {
+  alert('It is Corona Time, RUN AWAY!!!')
+})
