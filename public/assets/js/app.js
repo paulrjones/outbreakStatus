@@ -94,5 +94,6 @@ console.log("object: ", insertObj)
   createUser(insertObj);
   console.log(event.target);
   console.log("Hi2b");
+  insertObj = '';
 });
 console.log("Hello world2b");
