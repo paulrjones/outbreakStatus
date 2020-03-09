@@ -1,3 +1,5 @@
+// english fetch Request
+
 fetch(
   "https://newsapi.org/v2/top-headlines?q=coronavirus&sortBy=publishedAt&language=en&apiKey=f7435c3676b34c89bdb1562b6cac0849"
 )
@@ -25,6 +27,59 @@ fetch(
   })
   .catch(e => console.error(e));
 
+// 中文 fetch request
+fetch('https://newsapi.org/v2/top-headlines?country=cn&apiKey=f7435c3676b34c89bdb1562b6cac0849')
+    .then(r => r.json())
+    .then(({articles}) => {
+      console.log(articles)
+      document.getElementById('zhnewsTitle0').innerHTML = `
+        <h4>${articles[0].title}</h4>
+      `
+      document.getElementById('zhnewsBody0').innerHTML = `
+        <p>${articles[0].description}</p>
+      `
+      document.getElementById('zhnewsTitle1').innerHTML = `
+        <h4>${articles[1].title}</h4>
+      `
+      document.getElementById('zhnewsBody1').innerHTML = `
+        <p>${articles[1].description}</p>
+      `
+      document.getElementById('zhnewsTitle2').innerHTML = `
+        <h4>${articles[2].title}</h4>
+      `
+      document.getElementById('zhnewsBody2').innerHTML = `
+        <p>${articles[2].description}</p>
+      `
+    })
+    .catch(e => console.error(e))
+
+
+// Spanish 
+
+fetch('https://newsapi.org/v2/top-headlines?q=coronavirus&sortBy=publishedAt&language=es&apiKey=f7435c3676b34c89bdb1562b6cac0849')
+    .then(r => r.json())
+    .then(({articles}) => {
+      console.log(articles)
+      document.getElementById('esnewsTitle0').innerHTML = `
+        <h4>${articles[0].title}</h4>
+      `
+      document.getElementById('esnewsBody0').innerHTML = `
+        <p>${articles[0].description}</p>
+      `
+      document.getElementById('esnewsTitle1').innerHTML = `
+        <h4>${articles[1].title}</h4>
+      `
+      document.getElementById('esnewsBody1').innerHTML = `
+        <p>${articles[1].description}</p>
+      `
+      document.getElementById('esnewsTitle2').innerHTML = `
+        <h4>${articles[2].title}</h4>
+      `
+      document.getElementById('esnewsBody2').innerHTML = `
+        <p>${articles[2].description}</p>
+      `
+    })
+    .catch(e => console.error(e))
 // pulls the axios cdn and localStorage off of the window object (not needed to do but a good practice)
 //const { localStorage } = window;
 
