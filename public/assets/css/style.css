@@ -369,6 +369,15 @@ and (orientation : portrait) {
         width: auto;
         margin-left: 20px;
     }
+
+    input#male {
+        width: auto;
+    }
+    input#female {
+        width: auto;
+        margin-left: 20px;  
+    }
+
     
     .qr {
         margin-bottom: 20px;
