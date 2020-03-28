@@ -331,6 +331,17 @@ crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <script src="./assets/js/app.js"></script>
+<script src="./assets/js/scrapers.js"></script>
+<script>
+  $.ajax({
+    url: 'https://thevirustracker.com/free-api?global=stats',
+    dataType: 'json',
+    success: function(data) {
+      console.log(data);
+    }
+  });
+</script>
+<!-- <script src="./assets/js/coronaApi.js"></script> -->
 </body>
 
 </html>
