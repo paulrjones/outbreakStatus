@@ -323,14 +323,30 @@ crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <script src="./assets/js/app.js"></script>
+<script src="./assets/js/scrapers.js"></script>
 <script>
   $.ajax({
-   url: 'https://thevirustracker.com/free-api?global=stats',
-   dataType: 'json',
-   success: function(data) {
-     console.log(data);
-   }
- });
+    url: 'https://thevirustracker.com/free-api?global=stats',
+    dataType: 'json',
+    success: function({results}) {
+      console.log(results[0]);
+      
+      // Total cases
+      document.getElementById('caseCounter').innerText = `
+        ${results[0].total_cases}      
+      `
+      // Total Deaths
+      document.getElementById('deathCounter').innerText = `
+        ${results[0].total_deaths}
+      `
+      // Total Recovered
+      document.getElementById('recoveredCounter').innerText = `
+        ${results[0].total_recovered}
+      `
+    }
+  });
+
+  
 </script>
 </body>
 
