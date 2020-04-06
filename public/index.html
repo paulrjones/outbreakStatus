@@ -349,7 +349,6 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-<script src="./assets/js/app.js"></script>
 <script src="./assets/js/scrapers.js"></script>
 <script>
   $.ajax({
@@ -360,21 +359,22 @@ crossorigin="anonymous"></script>
       
       // Total cases
       document.getElementById('caseCounter').innerText = `
-        ${results[0].total_cases}      
+      ${results[0].total_cases}      
       `
       // Total Deaths
       document.getElementById('deathCounter').innerText = `
-        ${results[0].total_deaths}
+      ${results[0].total_deaths}
       `
       // Total Recovered
       document.getElementById('recoveredCounter').innerText = `
-        ${results[0].total_recovered}
+      ${results[0].total_recovered}
       `
     }
   });
-
+  
   
 </script>
+<script src="./assets/js/app.js"></script>
 <!-- <script src="./assets/js/coronaApi.js"></script> -->
 </body>
 
