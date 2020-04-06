@@ -1,6 +1,3 @@
-import scrapeProject from './scrapers'
-// english fetch Request
-
 
 fetch(
   "https://newsapi.org/v2/top-headlines?q=coronavirus&sortBy=publishedAt&language=en&apiKey=f7435c3676b34c89bdb1562b6cac0849"
