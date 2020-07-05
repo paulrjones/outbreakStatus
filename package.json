@@ -1,0 +1,32 @@
+{
+  "name": "outbreakstatus",
+  "version": "1.0.0",
+  "description": "www.outbreakstatus.com. This is a full stack web app that will provide all things related to epidemics.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanErickson/outbreakStatus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvanErickson/outbreakStatus/issues"
+  },
+  "homepage": "https://github.com/EvanErickson/outbreakStatus#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-react": "^1.0.2",
+    "jQuery": "^1.7.4",
+    "mysql2": "^2.1.0",
+    "puppeteer": "^2.1.1",
+    "sequelize": "^5.21.5",
+    "unirest": "^0.6.0"
+  }
+}

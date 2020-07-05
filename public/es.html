@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estatus del brote</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="body">
+  <div class="container">
+    <nav>
+        <div class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="es.html"><img src="assets/img/OSbiohazzard.png" class="main-logo"><span>Estatus del brote</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./register.html"> Travel Advisory <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#logInModal" href="ekit.html">How to Prepare</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#logInModal" href="#">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-target="#logInModal" href="index.html">English</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#logInModal" href="es.html">Español</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#logInModal" href="zh.html">中文</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+      </nav>
+
+    </div>
+        
+  <div class="container">
+    <div class="newsContainer">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text-center" id="esnewsTitle0"></div>
+              <div class="text-center" id="esnewsBody0"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center" id="esnewsTitle1"></div>
+              <div class="text-center" id="esnewsBody1"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center" id="esnewsTitle2"></div>
+              <div class="text-center" id="esnewsBody2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="riskAssessmentText col-sm-12 mr-0 col-sm-auto col-md-6">
+          <div>
+            <form class="risk-form">
+              <div class="form-group row ">
+
+                <h4>¿Estás en riesgo de contraer el coronavirus? Descubre a continuación:</h4>
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Correo electronico</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="gender" class="col-sm-2 col-form-label">Sexo</label>
+                <div class="form-inline col-sm-10 ">
+                  <input type="radio" class="form-control " name="gender" id="gender" checked>
+                  <label label class="form-check-label" for="male">Hombre</label>
+                  <input type="radio" class="form-control " name="gender" id="gender">
+                  <label label class="form-check-label" for="female">Mujer</label>
+                </div>
+              </div>
+              <div class="dropdown">
+                <label for="age" class="mr-2">Edad:</label>
+                <select id="age">
+                  <option value="baby">0-3</option>
+                  <option value="young">3-10</option>
+                  <option value="teen">11-17</option>
+                  <option value="older" selected>18-35</option>
+                  <option value="okBoomer">36-64</option>
+                  <option value="veryOld">65+</option>
+                </select>
+              </div>
+              <!-- <div class="form-group row">
+              <label for="userLocation" class="col-sm-2 col-form-label">Location</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+              </div>
+            </div> -->
+
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Ubicación</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="North America"
+                        checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Norteamérica
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Europa">
+                      <label class="form-check-label" for="gridRadios2">
+                        Europa
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Asia">
+                      <label class="form-check-label" for="gridRadios3">
+                        Asia
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="Africa">
+                      <label class="form-check-label" for="gridRadios4">
+                        África
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+
+
+              <div class="form-group row">
+                <div class="col-sm-2">¿Has viajado a estos paises?</div>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="china" id="traveledChina">
+                    <label class="form-check-label" for="defaultCheck1">
+                      China
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="italy" id="traveledItaly">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Italia
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="iran" id="traveledIran">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Irán
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="southKorea" id="traveledSouthKorea">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Corea del Sur
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="southAmerica" id="traveledSouthAmerica">
+                    <label class="form-check-label" for="gridRadios5">
+                      America del Sur
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="australia" id="traveledAustralia">
+                    <label class="form-check-label" for="gridRadios6">
+                      Australia
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+              <!--
+              <div class="btn-risk col-sm-10">
+                <button type="submit" class="btn btn-primary  ">Submit</button>
+              </div> -->
+          </div>
+
+          <div class="sign-up">
+            <form class="sign-up">
+              <h4>¿Quieres noticias?</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="true" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Sí
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="false">
+                <label class="form-check-label" for="exampleRadios2">
+                  No
+                </label>
+              </div>
+              <small id="emailHelp" class="form-text text-muted">No damos tu correo electronico a nadie.</small>
+
+              <button class="btn btn-primary" id="addUser">Submit</button>
+            </form>
+          </div>
+
+          </form>
+
+
+        </div>
+        <!--  MAP -->
+        <div class="map col-lg-auto col-md-auto col-sm-auto ">
+
+          <div class='tableauPlaceholder' id='viz1583359103396' style='position: relative'><noscript><a
+                href='https:&#47;&#47;www.cnbc.com&#47;2020&#47;01&#47;23&#47;this-map-shows-the-latest-spread-of-the-coronavirus.html'><img
+                  alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusMap&#47;Dashboard1&#47;1_rss.png'
+                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='path'
+                value='views&#47;CoronavirusMap&#47;Dashboard1?:embed=y&amp;:toolbar=yes&amp;:embed_code_version=3&amp;:loadOrderID=0&amp;:display_count=yes&amp;publish=yes&amp;:tabs=no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CoronavirusMap&#47;Dashboard1&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='tabs' value='no' />
+              <param name='filter' value='publish=yes' /></object></div>
+
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1583359103396');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+              vizElement.style.width = '1000px';
+              vizElement.style.height = '677px';
+            } else if (divElement.offsetWidth > 500) {
+              vizElement.style.width = '1000px';
+              vizElement.style.height = '677px';
+            } else {
+              vizElement.style.width = '100%';
+              vizElement.style.height = '1027px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+        </div>
+
+      </div>
+
+
+    </div>
+    <br>
+    <div class="container">
+      <div class="row footer">
+        <div class="twitter qr col-3">
+          
+          <h3>Twitter:</h3>
+         <img src="./assets/img/twitterQRcode.png" alt="twitter">
+        </div><!--twitter-->
+        <div class="github qr col-3">
+          <h3>Github:</h3>
+            <img class="qr" src="./assets/img/outbreakStatusGithub.png" alt="myPortfolio">
+        </div>
+        <div class="wechat qr col-3">
+          <h3>WeChat:</h3>
+          <img id="wechatCode" src="./assets/img/张亿万微信.png" alt="wechatCode">
+        </div>
+    </div><!--row-->
+    </div><!-- smaller container-->
+  </div><!--main container-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/scrapers.js"></script>
+<script>
+  $.ajax({
+    url: 'https://thevirustracker.com/free-api?global=stats',
+    dataType: 'json',
+    success: function({results}) {
+      console.log(results[0]);
+      
+      // Total cases
+      document.getElementById('caseCounter').innerText = `
+        ${results[0].total_cases}      
+      `
+      // Total Deaths
+      document.getElementById('deathCounter').innerText = `
+        ${results[0].total_deaths}
+      `
+      // Total Recovered
+      document.getElementById('recoveredCounter').innerText = `
+        ${results[0].total_recovered}
+      `
+    }
+  });
+
+  
+</script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+.red {
+    color: #F22E2E;
+}
+
+.green {
+    color: rgb(180, 199, 35);
+}
+
+.white {
+    color: #fff;
+}
+
+.orange {
+    color: #F0933F;
+}
+
+.body {
+    background-color: #fff;
+    /* background-color: #D9D9D9; */
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+.description {
+    max-width: 250px;
+}
+
+.d-block {
+    width: 100%;
+    height: 700px;
+}
+
+.container-1 {
+    margin: auto;
+    width: auto;
+    /* max-width: 680px; */
+    padding: auto;
+}
+
+.navItem {
+    font-size: 25px;
+    color: white;
+}
+
+.navbar {
+    margin: auto;
+}
+
+.newsContainer {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0 0;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.newsTitle {
+    font-size: 45px;
+    text-align: center;
+}
+
+.riskImg img {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.riskAssessment {
+    width: 100%;
+}
+
+.riskAssessmentText {
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 60%;
+    padding: 30px;
+    display: inline-block;
+}
+
+.riskImg {
+    display: inline-block;
+    margin: 0;
+}
+
+.main-logo {
+    height: 80px;
+    width: auto;
+}
+
+#navButtons {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.newsContainer {
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    height: 180px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/* for desktops only */
+
+.carousel-indicators {
+    position: relative;
+    top: 130px;
+}
+
+.riskAssessmentAndEmail {
+    border: 1px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.footer {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.sign-up {
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    margin-bottom: 45px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.risk-assessment {
+    background-color: rgb(230, 230, 230);
+    border: 1px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.map {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.form-check-label {
+    padding: 5px;
+}
+
+.btn-risk {
+    width: 100px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+h4 {
+    text-align: center;
+}
+
+img#wechatCode {
+    height: 105px;
+    width: 105px;
+}
+
+/* 
+@media screen and (max-width: 320px) {
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .newsContainer {
+        width: 100%;
+    }
+    .riskAssessmentText {
+        width: 100%;
+        background: lightgrey;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .map {
+        width: 100%;
+        border: none;
+    }
+    .twitter {
+        border: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .newsContainer {
+        width: 100%;
+    }
+    .riskAssessmentText {
+        width: 100%;
+        background: lightgrey;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .map {
+        width: 100%;
+        border: none;
+    }
+    .twitter {
+        border: none;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .newsContainer {
+        width: 100%;
+    }
+    .riskAssessmentText {
+        width: 100%;
+        background: lightgrey;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .map {
+        width: 100%;
+        border: none;
+    }
+    .twitter {
+        border: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-logo {
+        width: 100%;
+        height: auto;
+    }
+    .newsContainer {
+        width: 100%;
+    }
+    .riskAssessmentText {
+        background: white;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .map {
+        
+        width: 40%;
+        border: none;
+    }
+    .twitter {
+        border: none;
+        width: 100%;
+    }
+    .row{
+        width: 100%
+    }
+} */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 374px) 
+and (orientation : portrait) {
+    img.main-logo {
+        height: 30px;
+    }
+    span{
+        margin-left: 20px;
+    }
+    button.navbar-toggler {
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        border: none;
+    }
+    .riskAssessmentText {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+    }
+    .row.footer {
+        display: flex;
+        flex-direction: column;
+    }
+    input#male{
+        width: auto;
+    }
+    input#female{
+        width: auto;
+        margin-left: 20px;
+    }
+    .qr {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (orientation : portrait) {
+    img.main-logo {
+        height: 40px;
+    }
+    span{
+        margin-left: 20px;
+    }
+    button.navbar-toggler {
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        border: none;
+    }
+    .riskAssessmentText {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+    }
+    .row.footer {
+        display: flex;
+        flex-direction: column;
+    }
+    input#gender{
+        width: auto;
+        margin-left: 20px;
+    }
+
+    input#male {
+        width: auto;
+    }
+    input#female {
+        width: auto;
+        margin-left: 20px;  
+    }
+
+    
+    .qr {
+        margin-bottom: 20px;
+    }
+}
+   

@@ -1,2 +1,2 @@
 # outbreakStatus
-Tracking of COVID-19
+www.outbreakstatus.com. This is a full stack web app that will provide all things related to epidemics.
